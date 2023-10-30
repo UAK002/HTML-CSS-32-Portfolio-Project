@@ -190,7 +190,7 @@ Navbar
 .nav-header {
   /* background: red; */
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   align-items: center;
 }
 .nav-btn {
@@ -201,15 +201,41 @@ Navbar
   cursor: pointer;
   justify-self: end;
 }
+@media screen and (min-width: 768px) {
+  .nav {
+    background: var(--clr-primary-10);
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    /* background: red; */
+    column-gap: 2rem;
+    justify-self: end;
+  }
+  .nav-links a {
+    /* background: var(--clr-grey-7); */
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--clr-grey-1);
+    transition: var(--transition);
+    letter-spacing: var(--spacing);
+  }
+  .nav-links a:hover {
+    color: var(--clr-primary-5);
+  }
+  .nav-center {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+}
 
 /* 
-- T .nav-header 3(DGA )& display grid & GTC 1fr 1fr & AI center
 
-- T .nav-btn 6(BBCFCJ )& BG transparent & border transparent & color --clr-primary-5 & FZ 2rem & cursor pointer
-
-- T .nav-btn & justify-self end
-
-- to check > firefox browser > dev tools > grid tool > select "div.nav-header" > we can see 2 columns. The logo is aligned to the left and the toggle button is on the right.
 
 */
 
