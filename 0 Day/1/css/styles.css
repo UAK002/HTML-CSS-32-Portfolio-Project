@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
 
 /*
 =============== 
@@ -38,8 +38,8 @@ Variables
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -167,9 +167,50 @@ p {
 /* added during recording */
 
 /*
-=============== 
+===============
 Navbar
 ===============
+*/
+.nav-links {
+  display: none;
+}
+.nav {
+  height: 5rem;
+  padding: 1rem;
+  display: grid;
+  align-items: center;
+  transition: var(--transition);
+}
+.nav-center {
+  /* background: green; */
+  width: 100%;
+  max-width: 1170px;
+  max-width: 0 auto;
+}
+.nav-header {
+  /* background: red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.nav-btn {
+  border: transparent;
+  background: transparent;
+  font-size: 2rem;
+  color: var(--clr-primary-5);
+  cursor: pointer;
+  justify-self: end;
+}
+
+/* 
+- T .nav-header 3(DGA )& display grid & GTC 1fr 1fr & AI center
+
+- T .nav-btn 6(BBCFCJ )& BG transparent & border transparent & color --clr-primary-5 & FZ 2rem & cursor pointer
+
+- T .nav-btn & justify-self end
+
+- to check > firefox browser > dev tools > grid tool > select "div.nav-header" > we can see 2 columns. The logo is aligned to the left and the toggle button is on the right.
+
 */
 
 /*
