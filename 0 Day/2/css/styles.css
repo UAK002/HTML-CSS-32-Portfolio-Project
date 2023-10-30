@@ -305,6 +305,16 @@ Sidebar
 .close-btn:hover {
   color: #e66b6b;
 }
+/* Fixed Navbar */
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
+  z-index: 2;
+}
 
 /*
 =============== 
@@ -312,6 +322,10 @@ Hero
 ===============
 */
 /* underline added to globals */
+.hero {
+  background: red;
+  min-height: 130vh;
+}
 
 /* 
 
