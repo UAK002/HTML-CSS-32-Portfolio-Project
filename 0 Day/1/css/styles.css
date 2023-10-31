@@ -371,7 +371,8 @@ Hero
     grid-template-columns: 1fr 1fr;
   }
 
-  .hero-img::before {
+  .hero-img::before,
+  .about-img::before {
     content: '';
     position: absolute;
     height: 100%;
@@ -411,10 +412,20 @@ About
 .about-img {
   justify-self: center;
 }
-
-/* 
-
-*/
+@media screen and (min-width: 992px) {
+  .about-center {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-img {
+    position: relative;
+  }
+  .about-img::before {
+    left: -2rem;
+  }
+  .about-info {
+    align-self: center;
+  }
+}
 
 /*
 =============== 
@@ -423,6 +434,10 @@ Services
 */
 /* small screen layout setup */
 /* bg-grey in globals */
+
+/* 
+
+*/
 
 /*
 =============== 
