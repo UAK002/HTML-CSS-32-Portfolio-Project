@@ -165,6 +165,14 @@ p {
   }
 }
 /* added during recording */
+.underline {
+  background: var(--clr-primary-5);
+  width: 5rem;
+  height: 0.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25rem;
+}
 
 /*
 =============== 
@@ -327,7 +335,32 @@ Hero
   min-height: 130vh;
 } */
 
+.hero .underline {
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+}
+.hero-img {
+  display: none;
+}
+.hero {
+  background: var(--clr-primary-10);
+}
+.hero-center {
+  min-height: calc(100vh - 5rem);
+  display: grid;
+  place-items: center;
+}
+.hero-info h4 {
+  color: var(--clr-grey-5);
+}
+.hero-icons {
+  justify-items: start;
+}
+.hero-btn {
+  margin-top: 1.25rem;
+}
 /* 
+
 
 
 
