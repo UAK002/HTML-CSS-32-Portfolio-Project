@@ -590,7 +590,7 @@ Connect
 
 .connect {
   position: relative;
-  height: 40vh;
+  min-height: 40vh;
   padding: 10rem 0 5rem 0;
   margin: 5rem 0;
 }
@@ -601,6 +601,7 @@ Connect
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: -2;
 }
 .connect::after {
   content: '';
@@ -611,10 +612,31 @@ Connect
   height: 100%;
   background: var(--clr-white);
   opacity: 0.7;
+  z-index: -1;
+}
+
+.video-banner {
+  /* position: relative; */
+  background: var(--clr-primary-10);
+  padding: 3rem 5rem 12rem 5rem;
+  text-align: center;
+}
+.connect {
+  display: grid;
+  place-items: center;
+}
+.connect .section-title {
+  margin-bottom: 2rem;
+}
+.video-banner p {
+  max-width: 30rem;
 }
 
 /* 
 
+
+
+- T .video-text 1(M)& max-width 30rem
 
 */
 
