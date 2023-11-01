@@ -589,6 +589,48 @@ Projects
 Connect
 ===============
 */
+.connect {
+  position: relative;
+  min-height: 40vh;
+  padding: 10rem 0 5rem 0;
+  margin: 5rem 0;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.connect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-white);
+  opacity: 0.7;
+  z-index: -1;
+}
+.video-banner {
+  /* position: relative; */
+  background: var(--clr-primary-10);
+  text-align: center;
+  padding: 3rem 5rem 12rem 5rem;
+}
+.connect {
+  display: grid;
+  place-items: center;
+}
+.connect .section-title {
+  margin-bottom: 2rem;
+}
+.video-banner p {
+  max-width: 30rem;
+}
 
 /*
 =============== 
