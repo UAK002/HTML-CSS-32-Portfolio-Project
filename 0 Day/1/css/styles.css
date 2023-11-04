@@ -873,8 +873,34 @@ Single Page
 ===============
 */
 
-/* 
+.single-page {
+  background: var(--clr-primary-10);
+  min-height: calc(100vh - 5rem - 198px);
+}
+.page-info {
+  max-width: 700px;
+}
+.page-info a {
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+.page-info a:hover {
+  color: var(--clr-primary-1);
+}
 
+/* 
+- styles.css > comment Single Page
+
+- T .single-page 2(BM)& BG --primary-10
+
+- T .single-page & min-height calc (100vh - 5rem -198px)
+
+- T .page-info 1(M)& max-width 700px
+
+- T .page-info a 3(TCT)& TT uppercase & color --primary-5 & transition --transition
+
+- T .page-info a:hover 1(C)& color --primary-1
 
 
 */
